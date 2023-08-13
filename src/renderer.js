@@ -1,5 +1,5 @@
 const MongoClient = require('mongodb').MongoClient;
-const { ipcRenderer } = require('electron');
+const { ipcRenderer, shell } = require('electron');
 const bootstrap = require('bootstrap')
 const sdk = require('microsoft-cognitiveservices-speech-sdk');
 
@@ -35,6 +35,10 @@ mongoFormButton.addEventListener("click", (ev) => {
 	}
 })
 
+document.querySelector("#buymeacoffee").addEventListener("click", (ev)=>{
+	ev.preventDefault()
+	shell.openExternal('https://www.buymeacoffee.com/DynastyKids')
+})
 
 async function checkMongoConnection(uri) {
 	const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });

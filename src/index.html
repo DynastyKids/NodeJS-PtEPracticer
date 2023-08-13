@@ -11,14 +11,17 @@
 	<h1>Hello There!</h1>
 	<p>Please fill your own database link for your own question bank.</p>
 	<p>If you didn't have a database, you can try this database as data in 2023Q1.</p>
-	<p>It's open-source and free to use project, Consider supports me with <a href="https://www.buymeacoffee.com/DynastyKids"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=DynastyKids&button_colour=FFDD00&font_colour=000000&font_family=Comic&outline_colour=000000&coffee_colour=ffffff" /></a></p>
+	<p>It's open-source and free to use project, Consider supports me with 
+		<a href="#" id="buymeacoffee"><img
+				src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=DynastyKids&button_colour=FFDD00&font_colour=000000&font_family=Comic&outline_colour=000000&coffee_colour=ffffff" /></a>
+	</p>
 	<hr>
 	<h4>MongoDB credential Info</h4>
 	<p>Please input your mongodb connecting string to follow field for connection to question bank.</p>
 	<form id="mongoForm" class="mb-3">
 		<div class="row g-3 align-items-center">
-			<div class="col-sm-auto"><label for="mongoURI"  class="form-label">MongoDB connect string:</label></div>
-			<div class="col-sm-8"><input type="text" id="mongoURI" name="mongoURI" class="form-control mb-2"/></div>
+			<div class="col-sm-auto"><label for="mongoURI" class="form-label">MongoDB connect string:</label></div>
+			<div class="col-sm-8"><input type="text" id="mongoURI" name="mongoURI" class="form-control mb-2" /></div>
 		</div>
 		<div class="row g-3 align-items-start">
 			<div class="col-sm-4"><button type="button" class="btn btn-primary" id="mongoFormBtn">Save</button></div>
@@ -31,17 +34,18 @@
 		<div class="mb-1 row g-3 align-items-center">
 			<div class="col-sm-6">
 				<label for="speechPassword" class="form-label">Password:</label>
-				<input type="password" id="speechPassword" name="speechPassword" class="form-control"/>
+				<input type="password" id="speechPassword" name="speechPassword" class="form-control" />
 				<span class="form-text">Enter the one of the API password from Microsoft</span>
 			</div>
 			<div class="col-sm-6">
 				<label for="speechPassword1" class="form-label">Azure Server Location:</label>
-				<input type="text" id="speechLocation" name="speechLocation" class="form-control"/>
+				<input type="text" id="speechLocation" name="speechLocation" class="form-control" />
 				<span class="form-text">The location of your service deployed</span>
 			</div>
 		</div>
 		<div class="mb-2 row g-3 align-items-center">
-			<div class="col-sm-4"><button type="button" class="btn btn-primary" id="azureFormSubmitBtn">Save</button></div>
+			<div class="col-sm-4"><button type="button" class="btn btn-primary" id="azureFormSubmitBtn">Save</button>
+			</div>
 			<div class="col-sm-4"><span id="azureStatusText" class="form-text">Status: Null</span></div>
 		</div>
 		<div class="mb-2 row g-3 align-items-center">
@@ -52,56 +56,47 @@
 	</form>
 	<hr>
 	<h4>Practice Items</h4>
-	<table class="table table-striped">
-		<thead style="text-align: center;">
-			<td>Speaking</td>
-			<td>Writing</td>
-			<td>Reading</td>
-			<td>Listening</td>
-		</thead>
-		<tr>
-			<td><a href="#">Personal Introduction</a></td>
-			<td><a href="./Writing/swt.html">Summarize Written Text</a></td>
-			<td><a href="./Listening/SPT/spt.html">Summarize Spoken Text</a></td>
-			<td><a href="#">Multiple Choice, Multiple Answers</a></td>
-		</tr>
-		<tr>
-			<td><a href="#">Read Aloud</a></td>
-			<td><a href="./Writing/ess.html">Essay</a></td>
-			<td><a href="#">Reading & Writing: Fill in the Blanks</a></td>
-			<td><a href="./Listening/FIB/fib.html">Fill in the Blanks</a></td>
-		</tr>
-		<tr>
-			<td><a href="#">Repeat Sentence</a></td>
-			<td></td>
-			<td><a href="#">Multiple Choice, Multiple Answer</a></td>
-			<td><a href="./Listening/HCS/hcs.html">Highlight Correct Summary</a></td>
-		</tr>
-		<tr>
-			<td><a href="#">Describe Image</a></td>
-			<td></td>
-			<td><a href="#">Re-order Paragraphs</a></td>
-			<td><a href="#">Multiple Choice, Single Answer</a></td>
-		</tr>
-		<tr>
-			<td><a href="#">Re-tell lecture</a></td>
-			<td></td>
-			<td><a href="#">Fill in the Blanks</a></td>
-			<td><a href="#">Select Missing Word</a></td>
-		</tr>
-		<tr>
-			<td><a href="#">Answer Short Question</a></td>
-			<td></td>
-			<td><a href="#">Multiple Choice, Single Answer</a></td>
-			<td><a href="#">Highlight Incorrect Words</a></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td><a href="./Listening/WFD/wfd.html">Write from Dictation</a></td>
-		</tr>
-	</table>
+	<div class="row">
+		<div class="col-sm-6 col-md-3">
+			Speaking
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item"><a href="#">Read Aloud</a></li>
+				<li class="list-group-item"><a href="#">Repeat Sentence</a></li>
+				<li class="list-group-item"><a href="#">Describe Image</a></li>
+				<li class="list-group-item"><a href="#">Re-tell lecture</a></li>
+				<li class="list-group-item"><a href="#">Answer Short Question</a></li>
+			</ul>
+		</div>
+		<div class="col-sm-6 col-md-3">
+			Writing
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item"><a href="./Writing/swt.html">Summarize Written Text</a></li>
+				<li class="list-group-item"><a href="./Writing/ess.html">Essay</a></li>
+			</ul>
+		</div>
+		<div class="col-sm-6 col-md-3">
+			Reading
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item"><a href="#">Reading & Writing: Fill in the Blanks</a></li>
+				<li class="list-group-item"><a href="#">Multiple Choice, Multiple Answer</a></li>
+				<li class="list-group-item"><a href="#">Re-order Paragraphs</a></li>
+				<li class="list-group-item"><a href="#">Fill in the Blanks</a></li>
+				<li class="list-group-item"><a href="#">Multiple Choice, Single Answer</a></li>
+			</ul>
+		</div>
+		<div class="col-sm-6 col-md-3">
+			Listening
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item"><a href="#">Summarize Spoken Text</a></li>
+				<li class="list-group-item"><a href="#">Fill in the Blanks</a></li>
+				<li class="list-group-item"><a href="#">Highlight Correct Summary</a></li>
+				<li class="list-group-item"><a href="#">Multiple Choice, Single Answer</a></li>
+				<li class="list-group-item"><a href="#">Select Missing Word</a></li>
+				<li class="list-group-item"><a href="#">Highlight Incorrect Words</a></li>
+				<li class="list-group-item"><a href="./Listening/WFD/wfd.html">Write from Dictation</a></li>
+			</ul>
+		</div>
+	</div>
 	<script src="renderer.js"></script>
 	<script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
 	<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

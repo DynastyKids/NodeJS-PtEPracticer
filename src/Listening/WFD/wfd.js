@@ -16,13 +16,14 @@ let audioLengthInSeconds = 0;
 let audioProgressInterval = null;
 let currentTime = 0;
 let displayAnswer = false;
-
+let currentQuestionId = null
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         let question = await getOneQuestion();
         if (question.acknowledged) {
             document.querySelector("#displayAnswer").value = question.data.questionText
             document.querySelector("#inputQuestionid").value = question.data.questionId
+            currentQuestionId = question.data.questionId
             synthesizeSpeech(question.data.questionText);
         }
     } catch (err) {
@@ -55,6 +56,11 @@ document.querySelector("#btnAnswer").addEventListener("click",()=>{
         displayAnswer = !displayAnswer
         document.querySelector("#displayAnswer").style.removeProperty("display")
     }
+})
+
+document.querySelector("#btnNext").addEventListener("click",()=>{
+    document.querySelector("#inputQuestionid").value = "WFD"+(parseInt(currentQuestionId.match(/\d+/g)[0])+1);
+    document.querySelector("#btnGo").click()
 })
 
 function startProgressBar() {
