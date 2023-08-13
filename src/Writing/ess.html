@@ -1,0 +1,44 @@
+<!--  Include 300 word limit -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Summarize Written Text @ Writing - PtE Simulator by DynastyKids </title>
+    <link rel="stylesheet" href="../components/pagesUniversal.css" />
+    <link rel="stylesheet" href="../components/ccpbtns.css" />
+</head>
+
+<body>
+    <p>Summarize Written Text Practice page</p>
+    <a href="../index.html">Home</a>
+    <div style="display: flex;">
+        <form id="questionid" method="get">
+            <label for="inputQuestionid">Pick a question by ID:</label>
+            <input type="text" id="inputQuestionid">
+            <button type="submit">Submit</button>
+        </form>
+        <button id="random" style="margin-left: 15px; margin-right: 15px;">Random pick</button>
+        <button id="btnResettimer" style="right: 10px;">Reset Timer</button>
+        <p id="topStatusText"></p>
+    </div>
+    <hr>
+    <div id="stopwatch">Time used: 00:00:00</div>
+    <div style="margin: 2%;">
+        <p style="font-size: medium;font-weight: bold; margin-bottom: 5%;">Read the passage below and summarize it using one sentence. Type your response in the box at the bottom of the screen. You have 10 minutes to finish this task. Your response will be judged on the quality of your writing and on how well your response prosents the key points in the passage.</p>
+    
+    
+        <div style="position: fixed; width: 100%; bottom: 100px;">
+            <textarea id="inputAnswer" withspellcheck="false" rows="10" autofocus required wrap="soft" style="border: 2px solid black; width: 90%; align-self: center;"></textarea>
+            <div class="btnRow">
+                <button id="btnCut" style="align-self: flex-start;">Cut</button>
+                <button id="btnCopy" style="margin: 0 auto;">Copy</button>
+                <button id="btnPaste" style="align-self: flex-end;">Paste</button>
+            </div>
+        </div>
+    </div>
+    <script src="swt.js"></script>
+    <script src="../components/timer.js"></script>
+</body>
+</html>

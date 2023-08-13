@@ -1,0 +1,37 @@
+.answerbox {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 12pt;
+  border: 2px solid black;
+  resize: none;
+}
+
+table {
+  border: 2px solid black;
+  width: 350px;
+  min-height: 200px;
+  font-size: large;
+  margin-left: 1rem;
+  border-collapse: collapse;
+}
+
+table tr td{
+  padding: 5%;
+}
+
+#button_bar {
+  display: flex;
+  margin-left: 5%;
+  justify-content: space-between;
+  padding: 10px;
+  width: 85%;
+}
+
+
+#stopwatch {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+}

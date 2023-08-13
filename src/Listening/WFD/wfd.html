@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Write From Dictation @ Listening Practice - PtE Practicer by DynastyKids</title>
+    <link rel="stylesheet" href="../../components/pagesUniversal.css" />
+    <link rel="stylesheet" href="wfd.css" />
+    <link rel="stylesheet" href="../../components/timer.css" />
+</head>
+
+<body>
+    <p>Write From Dictation Practice page</p>
+    <a href="../../index.html">Home</a>
+    <div style="display: flex;">
+        <form id="pickQuestion" method="get">
+            <label for="inputQuestionid">Question ID:</label>
+            <input type="text" id="inputQuestionid">
+            <button type="button" id="btnGo">Go</button>
+        </form>
+        <button id="btnRandom" onclick="window.location.reload();" style="margin-left: 15px; margin-right: 15px;">Random</button>
+        <button id="btnNext" style="margin-left: 15px; margin-right: 15px;">Next</button>
+        <button id="btnAnswer" style="margin-left: 15px; margin-right: 15px;">Show Answer</button>
+        <button id="btnResettimer" style="right: 10px;">Reset Timer</button>
+        <p id="topStatusText"></p>
+    </div>
+    <hr>
+    <div id="stopwatch">Time used: 00:00:00</div>
+    <p style="font-size: medium;font-weight: bold; padding: 2%;">You will hear a sentence. Type the sentence in the box below exactly as you hear it. Write as much of the sentence as you can. You will hear the sentence only once.</p>
+    <p style="font-size: xx-small; padding-left: 2%;">* Volume Adjust unavailable</p>
+    <div style="display: flex; justify-content: center; margin: 0 auto 10% auto; width: 50%; padding: 2%;">
+        <table style="padding: 2% 0 2% 0;">
+            <tr>
+                <td>Status:</td>
+                <td colspan="3"><div id="labelPlayStatustext">Loading ...</div></td>
+            </tr>
+            <tr>
+                <td>Volume:</td>
+                <td colspan="3"><input type="range" min="1" max="100" value="50" class="slider" id="inputVoicerange" style="width: 60%;">
+                <audio id="audioPlayer" src="../../../library/audio/DING.mp3"></audio></td>
+            </tr>
+            <tr>
+                <td colspan="4"><progress id="labelPlayProgress" value="0" max="100" style="width: 80%; margin-left: 5%; margin-right: 5%;"></progress></td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="position: fixed; width: 100%; bottom: 30px;">
+        <textarea class="answerbox" id="displayAnswer" withspellcheck="false" rows="2" wrap="soft" style="padding: 1%; display: none;resize: none;" readonly></textarea>
+        <textarea class="answerbox" id="inputAnswer" withspellcheck="false" rows="3" autofocus required wrap="soft" style="padding: 1%;"></textarea>
+
+        <div id="button_bar" style="display: grid;grid-template-columns: auto auto auto;">
+            <button id="btnCut" style="align-self: flex-start;">Cut</button>
+            <button id="btnCopy" style="margin: 0 auto;">Copy</button>
+            <button id="btnCut" style="align-self: flex-end;">Paste</button>
+        </div>    
+    </div>
+    <script src="wfd.js"></script>
+    <script src="../../components/timer.js"></script>
+</body>
+
+</html>

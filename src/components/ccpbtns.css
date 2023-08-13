@@ -1,0 +1,27 @@
+/* Stylesheets for Cut, Copy & paste buttons */
+
+.btnRow {
+    width: 90%;
+    height: 50px;
+    position: relative;
+    /* border: 1px solid #000; */
+}
+
+.btnRow button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* To vertically center the buttons */
+}
+
+#btnCut {
+    left: 15%;
+}
+
+#btnCopy {
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); /* To center both vertically and horizontally */
+}
+
+#btnPaste {
+    right: 15%;
+}

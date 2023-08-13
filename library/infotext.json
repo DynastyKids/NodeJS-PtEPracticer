@@ -1,0 +1,83 @@
+{ 
+    "W_ess":{
+        "infotext": "You will have 20 minutes to plan, write and revise an essay about the topic below. Your response will be judged on how well you develop a position, organize your ideas, present supporting details, and control the elements of standard written English. You should write 200-300 words.",
+        "timelimit": 1200,
+        "wordcount": true,
+        "minqty":1,
+        "maxqty":2
+    },
+    "W_swt":{
+        "infotext": "Read the passage below and summarize it using one sentence. Type your response in the box at the bottom of the screen. You have 10 mintues to finish this task. Your response will be judged on the quality of your writing and on how weel your response presents the key points in the passage.",
+        "timelimit": 600,
+        "wordcount": true,
+        "minqty":1,
+        "maxqty":2
+    },
+    "R_fibrw":{
+        "infotext":"Below is a text with blanks. Click on each blank, a list of choices will appear. Select the appropriate answer choice for each blank.",
+        "minqty":5,
+        "maxqty":6
+    },
+    "R_mcqm":{
+        "infotext":"Read the text and answer the question by selecting all the correct responses. You will need to select more than one response.",
+        "minqty":1,
+        "maxqty":2
+    },
+    "R_rop":{
+        "infotext":"The text boxes in the left panel have been placed in a random order. Restore the original order by dragging the text boxes from the left panel to the right panel",
+        "minqty":2,
+        "maxqty":3
+    },
+    "R_fib":{
+        "infotext":"In the text below some words are missing. Drag words from the box below to the appropriate place in the text. To undo an answer choice, drag the word back to the box below the text.",
+        "minqty":4,
+        "maxqty":5
+    },
+    "R_mcqs":{
+        "infotext":"Read the text and answer the question by selecting the correct response. Only one response is correct",
+        "minqty":1,
+        "maxqty":2
+    },
+    "L_sst":{
+        "infotext":"You will hear a short interview. Write a summary for a fellow student who was not present at the interview. You should write 50-70 words, You have 10 minutes to finish this task.Your response will be judged on the quality of your writing and how well your response presents the key points in the interview.",
+        "timelimit":600,
+        "wordcount": true,
+        "minqty":1,
+        "maxqty":2
+    },
+    "L_mcqm":{
+        "infotext":"Listen to the recording and answer the question by selecting the correct responses. You will need to sleect more than one response.",
+        "minqty":1,
+        "maxqty":2
+    },
+    "L_fib":{
+        "infotext":"You will hear a recording. Typre the missing words in each blank.",
+        "minqty":2,
+        "maxqty":3
+    },
+    "L_hcs":{
+        "infotext":"You will hear a recording. Click on the paragraph that best relates to the recording.",
+        "minqty":1,
+        "maxqty":2
+    },
+    "L_mcqs":{
+        "infotext":"Listen to the recording and answer the question by selecting the correct response. Only one response is correct",
+        "minqty":1,
+        "maxqty":2
+    },
+    "L_smw":{
+        "infotext":"You will hear a recording about an analysis of a topic. At the end of recording the last word or group of words has been replaced by a beep. Select the correct option to complete the recording.",
+        "minqty":1,
+        "maxqty":2
+    },
+    "L_hiw":{
+        "infotext":"You will hear a recording. Below is a transcript of the recording. Some words ion the transcript are differ from what the speakers said. Click on the words that are different.",
+        "minqty":2,
+        "maxqty":3
+    },
+    "L_wfd":{
+        "infotext":"You will hear a sentence. Typre the sentence in the box below exactly as you hear it. Write as much of the sentence as you can. You will hear the sentence only once.",
+        "minqty":3,
+        "maxqty":4
+    }
+}
